@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 13px;
+}
+.mauDo{
+    font-size: 100%;
+    color: red;
+}
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+
+.branch-logo {
+    height: 100px;
+    width: 300px;
+}
+
+.header-sub {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.header-sub .header-icon li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    
+}
+.header-sub .header-icon a {
+    margin: 0 5px;
+    color: black;
+    text-decoration: none;
+}
+.header-sub .header-icon a:hover {
+    opacity: 0.7;
+}
+
+.header-sub .header-icon i {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.header-icon .giohang {
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.header-icon .giohang a {
+    text-decoration: none;
+}
+
+#navbar {
+    padding: 0 10vw;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: sticky;
+}
+
+.menu-main {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-main li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.menu-main li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.links-container li {
+    line-height: 100px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.links-container li:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.links-container .link-item:hover .menu-sub {
+    display: flex;
+}
+
+/* .links-container li:hover>a */
+.links-container .menu-sub li:hover,
+.links-container .menu-sub li:hover>a {
+    color: #000;
+    background-color: #e3e3e3;
+}
+
+.link-item .menu-sub {
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: rgb(60, 65, 65);
+    display: none;
+    flex-direction: column;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.menu-sub li {
+    border-bottom: 1px dashed #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 300px;
+    display: flex;
+}
+
+.search-box {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #a9a9a9;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn {
+    width: 30%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid #a9a9a9;
+    outline: none;
+    cursor: pointer;
+    background: #726e6e;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.search-box::placeholder {
+    color: #fff;
+}
+
+#main {
+    position: relative;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 3px 3px 10px red;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Container */
+.container {
+    width: 1500px;
+    position: relative;
+    padding: 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-banner {
+    margin-bottom: 15px;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+.col-sm-4 {
+    width: 33.3333%;
+}
+
+.top-banner .banner1 {
+    margin-bottom: 15px;
+}
+
+.des-banner h2 {
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 26px;
+    color: #111;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px black;
+}
+
+.top-banner>div .image {
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 2px 2px 5px black;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: #999999;
+}
+
+.banner1 .image .img-responsive {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner1 .image:hover .img-responsive {
+    transform: scale(1.2);
+}
+
+.banner2 .image .img-responsive {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner2 .image:hover .img-responsive {
+    transform: scale(1.2);
+}
+
+.banner3 .image .img-responsive {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner3 .image:hover .img-responsive {
+    transform: scale(1.2);
+}
+
+.hidden-xs {
+    position: relative;
+    width: 100%;
+    height: 479 px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hidden-xs .item-html {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hidden-xs .item-html h2 {
+    font-size: 48px;
+    line-height: 1em;
+    color: #fff;
+    margin: 0 0 28px;
+    padding: 0;
+}
+
+.hidden-xs .item-html h3 {
+    font-size: 70px;
+    line-height: 1em;
+    color: #fff;
+    margin: 0 0 43px;
+    padding: 0;
+}
+
+.hidden-xs .item-html .btn-hidden {
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.hidden-xs .item-html button:hover,
+.hidden-xs .item-html button:hover a {
+    background-color: #717171;
+    color: #fff;
+}
+
+.hidden-xs .item-html .btn-hidden a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.hidden-xs .parallax_media {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(70%);
+}
+
+.hidden-xs:hover .parallax_media{
+filter: brightness(100%);
+  transform: scale(1.2);
+}
+
+.menu-tab ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-tab ul li {
+    padding: 50px 10px;
+    list-style: none;
+}
+
+.menu-tab ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #717171;
+}
+
+.menu-tab ul li a:hover {
+    color: #000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.product-item {
+    font-size: 14px;
+    line-height: 1.15;
+    color: #777;
+
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.products {
+    margin: 0px 50px;
+}
+
+#product-container .headline-sp {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #111;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+}
+
+#product-container ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#product-container ul.products li {
+    flex-basis: calc(100%/5);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 50px;
+    border: 1px solid #f5f5f5;
+    margin-left: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 5px #717171;
+    border-radius: 10px 10px;
+    
+   
+}
+#product-container ul.products li img {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 5px #717171;
+    border-radius: 10px 10px;
+    transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(70%);
+}
+#product-container ul.products li img:hover{
+    filter: brightness(100%);
+  transform: scale(1.1);
+}
+#product-container ul.products li .product-seen{
+    position: absolute;
+    text-decoration: none;
+    color: #000;
+    display: none;
+   text-align: center;
+}
+#product-container ul.products li:hover .product-seen{
+    display: block;
+}
+#product-container ul.products .product-info {
+    padding: 20px 0;
+}
+
+#product-container ul.products .product-info a {
+    display: block;
+    text-decoration: none;
+
+}
+
+ul.products .product-info .product-cat {
+    font-size: 12px;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    padding: 10px 0;
+
+}
+
+ul.products .product-info .product-name {
+    color: #334862;
+    padding: 10px 0px;
+    font-size: 16px;
+
+}
+
+ul.products .product-info .product-price {
+    color: #111;
+    padding: 2px 0;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+ul.products .product-top .buy-now{
+    text-transform: uppercase;
+    background-color: #bbb;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    border-radius: 10px 10px;
+    box-shadow: 3px 3px 5px #717171;
+}
+ul.products .product-top .buy-now:hover{
+    background-color: red;
+    color: #f2f2f2;
+    
+}
+.container-fluid{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 0px 0px;
+}
+.container-fluid .nen-hotro{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-image: url("../img/nen-hotro.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.content { 
+    margin: 0 auto;  
+    width: 80%;
+    text-align: center;
+}
+.container-fluid .content .content-text {
+    padding: 40px 0px;
+    color: #fff;
+}
+.content-body{
+    margin-top: 50px;
+}
+.content-body .content-body-img{
+    margin-bottom: 40px; 
+    position: absolute;
+    padding-left: 10px;
+}
+.content-body .content-body-img img{
+    border: 1px solid #d2d2d2;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+.content-body .content-body-img .img-hotro{
+    background: #fff;
+    position: absolute;
+    transition: all 0.2s ease;
+    backface-visibility:hidden;
+}
+.img-hotro:nth-child(1){ 
+    z-index: 3;
+}
+.img-hotro:nth-child(2){
+    z-index: 1;
+}
+.img-hotro:nth-child(3){
+    z-index: 2;
+}
+.content-body-img:hover .img-hotro:nth-child(1){
+    transform: rotate(15deg);
+    transition: all 0.5s ease;
+}
+.content-body-img:hover .img-hotro:nth-child(2){
+    transform: rotate(7deg);
+    transition: all 0.10s ease;
+}
+.content-body-img:hover .img-hotro:nth-child(3){
+    transform: rotate(-5deg);
+}
+.content-body-text{
+    position: relative;
+    top:350px;
+}
+.content-body .content-body-text .tieude{
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.content-body .content-body-text .mota{
+    font-size: 13px;
+    color: #fff;
+    padding-left: 10px;
+    text-align: left;
+}
+.content-body .content-body-text .xemtiep a{
+    text-align: left;
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: none;  
+}
+.content-body .content-body-text .xemtiep a:hover{
+    color: red;
+}
+#footer .container-fluid{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.container-fluid .footer-txt{
+    position: relative;
+    width: 70%;  
+    margin-bottom: 60px;
+}
+.container-fluid .footer-txt .footer-header{
+    margin: 50px 0px;
+    
+}
+.container-fluid .footer-txt .footer-header h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+.container-fluid .footer-txt a{
+    text-decoration: none;
+}
+.container-fluid .footer-txt .footer-body .mxh{
+    border-left: 5px solid #111;
+}
+.container-fluid .footer-txt .footer-body .mxh a{
+    padding: 20px;
+}
+.container-fluid .footer-txt .footer-body .mxh a:hover{
+    opacity: 0.5;
+    color: #111;
+}
+.container-fluid .footer-txt .footer-body input{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.container-fluid .footer-txt .footer-body span{
+    background-color: black ;
+    font-size: 14px;
+    align-items: center;
+    display: inline-block;
+    padding: 5px 5px;
+    color: #fff;
+}
+.link-mxh{
+    margin: 20px 0;
+}
+.link-mxh a{
+    text-decoration: none;
+}
+
+.link-mxh i{
+    font-size: 50px;
+   padding: 0 10px;
+   color: #000;
+}
+.link-mxh i:hover{
+    opacity: 0.5;
+}

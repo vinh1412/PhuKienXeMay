@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mauDo{
+    font-size: 100%;
+    color: red;
+}
+#myModalDK .modal-content{
+    background-image: url(../img/modal-container2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Open Sans;
+}
+#myModalDK .modal-header button{
+    margin-bottom: 10px;
+    background-color: dimgrey;
+    float: right;
+    border: none;
+    width: 20px;
+    color: #fff;
+}
+#myModalDK .modal-header button:hover{
+   background-color: red;
+}
+#myModalDK .modal-header .create-your-account{
+    background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+    text-align: center;
+    color: #fff;
+    box-shadow: 2px 2px 3px aquamarine;
+    border-radius: 0px 10px 10px 0px;
+    width: 40%;
+}
+#myModalDK .modal-header .create{
+    width: 20%;
+}
+#myModalDK .modal-header .codien{
+    float: right;
+    background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%));
+    text-align: center;
+    color: #fff;
+    box-shadow: -2px 2px 3px aquamarine;
+    border-radius: 10px 0px 0px 10px;
+    width: 40%;
+}
+#myModalDK .modal-body .create-mxh{
+    /* background: linear-gradient(134deg, hsl(44, 96%, 65%), hsl(34, 95%, 45%)); */
+    color: hsl(0, 0, 100);
+    padding-top: 20px;
+}
+#myModalDK .modal-body .create-mxh button{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    border:rgb(59, 88, 151);
+    border-radius: 5px;
+}
+#myModalDK .modal-body .create-mxh button:nth-of-type(1){
+    background-color: rgb(59, 88, 151);
+
+}
+#myModalDK .modal-body .create-mxh button:nth-of-type(2){
+    background-color: #53ABEE;
+
+}
+#myModalDK .modal-body .create-mxh button:nth-of-type(3){
+    background-color: #DE4E3B;
+
+}
+#myModalDK .modal-body .create-mxh button:nth-of-type(4){
+    background-color: #53ABEE;
+
+}
+#myModalDK .modal-body .create-mxh a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+}
+#myModalDK .modal-body .create-mxh .btn-facebook i{
+    width: 40px;
+    font-size: 20px;
+    background-color: #354F88;
+    padding: 10px;
+}
+#myModalDK .modal-body .create-mxh .btn-twitter i{
+    width: 40px;
+    font-size: 20px;
+    background-color: #4A99D5;
+    padding: 10px;
+}
+#myModalDK .modal-body .create-mxh .btn-google i{
+    width: 40px;
+    font-size: 20px;
+    background-color: #C74635;
+    padding: 10px;
+}
+#myModalDK .modal-body .create-mxh .btn-linkedin i{
+    width: 40px;
+    font-size: 20px;
+    background-color: #4A99D5;
+    padding: 10px;
+}
+#myModalDK .modal-body .create-codien{
+    padding-top: 20px;
+}
+#myModalDK .modal-body .create-codien input{
+    height: 40px;
+}
+#myModalDK .modal-body .create-codien span{
+    /* color: #fff; */
+    font-size: 20px;
+    font-weight: 900;
+}
+#myModalDK .modal-body .create-codien .nut-signup{ 
+    display: flex;
+    justify-content: center;
+}
+#myModalDK .modal-body .create-codien .nut-signup input{
+    width: 200px;
+    text-transform: uppercase;
+    background-color: chartreuse;
+    border: none;
+}
+#myModalDK .modal-body .create-codien .nut-signup input:hover{
+    background-color: red;
+    color: #fff;
+}
+#myModalDK .modal-footer {
+    text-align: center;
+}
+#myModalDK .modal-footer button{
+    width: 100px;
+}
+/* Modal Đăng nhập */
+#myModalDB .modal-size{
+    position: relative;
+    width: 80%;
+}
+#myModalDN .modal-content{
+    font-family: Open Sans;
+    background-image: url(../img/modal-dn1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#myModalDN .modal-header{
+    text-align: center;
+    color: #fff;
+}
+#myModalDN .modal-header h2{
+    font-weight: 700;
+}
+#myModalDN .modal-body{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#myModalDN .modal-body-size{
+    width: 70%;
+}
+#myModalDN .modal-body-size input{
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 16px;
+}
+#myModalDN .modal-body-size span{
+    font-size: 20px;
+    font-weight: 900;
+}
+#myModalDN .modal-body-size button{
+    margin-bottom: 10px;
+}
+#myModalDN .modal-body-size .nut-signin{
+    text-align: center;
+}
+#myModalDN .modal-body-size .nut-signin button{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background-color: #B8F1E6;
+    border: none;
+    color: #000;
+}
+#myModalDN .modal-body-size .nut-signin button:hover{
+    opacity: 0.8;
+}
+#myModalDN .modal-body-size .nut-khac{
+    text-align: center;
+}
+#myModalDN .modal-body-size .nut-khac button{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+}
+#myModalDN .modal-body-size .nut-khac .forget{
+    background-color: #fff;
+}
+#myModalDN .modal-body-size .nut-khac .forget:hover{
+    color: red;
+
+}
+#myModalDN .modal-body-size .nut-khac .signup{
+    background-color: #B8F1E6;
+    color: #000;
+    border: none;
+}
+#myModalDN .modal-body-size .nut-khac .signup:hover{
+    opacity: 0.8;
+}
+#myModalDN .modal-footer {
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#myModalDN .modal-footer button{
+    width: 100px;
+    background-color: #DE4E3B;
+    height: 40px;
+    font-size: 16px;
+}
+#myModalDN .modal-footer button:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+#footer .footer-txt .sitemap{
+    float: right;
+    font-size: 20px;
+    color: #000;
+}
+#footer .footer-txt .sitemap a:hover{
+    color: red;
+}
+.sitemap-container .sitemap-header h1{
+    font-weight: 600;
+    color: #000;
+}
+.sitemap-container .sitemap-body a{
+    text-decoration: none ;
+    color: #4A99D5;
+    font-size: 13px;
+}
+.sitemap-container .sitemap-body a:hover{
+    color: #C74635;
+}
+.sitemap-container .sitemap-body a h3{
+    font-weight: 500;
+    color: #354F88;
+}

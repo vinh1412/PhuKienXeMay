@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    z-index: 1;
+}
+
+.branch-logo {
+    height: 100px;
+    width: 300px;
+}
+
+.header-sub {
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.header-sub .header-icon li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+}
+
+.header-sub .header-icon a {
+    margin: 0 5px;
+    color: black;
+    text-decoration: none;
+}
+.header-sub .header-icon a:hover {
+    opacity: 0.7;
+}
+.header-sub .header-icon i {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.header-icon .giohang {
+    border: 1px solid #e3e3e3;
+    padding: 15px 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.header-icon .giohang a {
+    text-decoration: none;
+}
+
+#navbar {
+    padding: 0 10vw;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    position: sticky;
+}
+
+.menu-main {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu-main li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.menu-main li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+}
+
+.links-container li {
+    line-height: 100px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.links-container li:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.links-container .link-item:hover .menu-sub {
+    display: flex;
+}
+
+/* .links-container li:hover>a */
+.links-container .menu-sub li:hover,
+.links-container .menu-sub li:hover>a {
+    color: #000;
+    background-color: #e3e3e3;
+}
+
+.link-item .menu-sub {
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: rgb(60, 65, 65);
+    display: none;
+    flex-direction: column;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.menu-sub li {
+    border-bottom: 1px dashed #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 300px;
+    display: flex;
+}
+
+.search-box {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #a9a9a9;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn {
+    width: 30%;
+    height: 40px;
+    padding: 10px 20px;
+    border: 1px solid #a9a9a9;
+    outline: none;
+    cursor: pointer;
+    background: #726e6e;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.search-box::placeholder {
+    color: #fff;
+}
+.giohang-container{
+    font-family: 'Times New Roman', Times, serif;
+}
+.giohang-container .giohang-header h2{
+    text-align: center;
+    font-weight: 700;
+}
+.giohang-container .giohang-body .giohang-tieude {
+    background-color: #f5f5f5;
+
+}
+.giohang-container .giohang-body .giohang-tieude p{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.giohang-container .giohang-body .giohang-sanpham{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.giohang-container .giohang-body .giohang-sanpham .anh img{
+    border-radius: 10px;
+    
+}
+.giohang-container .giohang-body .giohang-sanpham .noidung h5{
+  font-weight: 500;
+}
+.giohang-container .giohang-body .giohang-sanpham .soluong .button{
+    text-align: center;
+    width: 50%;
+    background-color: #f5f5f5;
+    border: none;
+    box-shadow: 3px 3px 4px #726e6e;
+}
+.giohang-container .giohang-body .giohang-sanpham .gia{
+    font-size: 16px;
+}
+.giohang-container .giohang-footer .dathang{
+    text-align: center;
+}
+.giohang-container .giohang-footer .dathang button{
+    width: 200px;
+    height: 50px;
+    background-color: #a9a9a9;
+    color: #000;
+    font-size: 16px;
+    border: none;
+}
+.giohang-container .giohang-footer .dathang button:hover{
+    background-color: red;
+    color: #fff;
+}
+#footer .container-fluid{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.container-fluid .footer-txt{
+    position: relative;
+    width: 70%;  
+    margin-bottom: 60px;
+}
+.container-fluid .footer-txt .footer-header{
+    margin: 50px 0px;
+    
+}
+.container-fluid .footer-txt .footer-header h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+.container-fluid .footer-txt a{
+    text-decoration: none;
+}
+.container-fluid .footer-txt .footer-body .mxh{
+    border-left: 5px solid #111;
+}
+.container-fluid .footer-txt .footer-body .mxh a{
+    padding: 20px;
+}
+.container-fluid .footer-txt .footer-body .mxh a:hover{
+    opacity: 0.5;
+    color: #111;
+}
+.container-fluid .footer-txt .footer-body input{
+    font-size: 14px;
+    padding: 5px 10px;
+}
+.container-fluid .footer-txt .footer-body span{
+    background-color: black ;
+    font-size: 13px;
+    align-items: center;
+    display: inline-block;
+    padding: 5px 5px;
+    color: #fff;
+}
+#map{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.link-mxh{
+    margin: 20px 0;
+}
+.link-mxh a{
+    text-decoration: none;
+}
+
+.link-mxh i{
+    font-size: 50px;
+   padding: 0 10px;
+   color: #000;
+}
+.link-mxh i:hover{
+    opacity: 0.5;
+}
+#footer .loichuc{
+    text-align: center;
+    text-transform: uppercase;
+}
